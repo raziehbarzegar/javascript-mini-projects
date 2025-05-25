@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100..900&family=Lalezar&family=Noto+Sans+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200&display=swap");
+::selection {
+  background: #03a9f4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Arabic", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #03a9f4;
+  height: 100vh;
+}
+.container {
+  width: 400px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+.container :where(textarea, button) {
+  outline: 0;
+  border: 0;
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 5px 0;
+}
+.container textarea {
+  border: 1px solid #999;
+  resize: none;
+}
+.container button {
+  background: #03a9f4;
+  transition: all 0.4s;
+}

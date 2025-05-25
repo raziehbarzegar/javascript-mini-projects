@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body, .container , .alarmSettings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background: #4a98f7;
+    height: 100vh;
+}
+
+.container{
+    flex-direction: column;
+    width: 450px;
+    background-color:#fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+.container .time{
+    font-size: 40px;
+    margin: 30px 0;
+}
+.container .alarmSettings{
+    width: 100%;
+    justify-content: space-between;
+}
+.container .alarmSettings.disabled{
+    opacity: 0.5;
+    pointer-events: none;
+    filter: grayscale(100%);
+}
+.alarmSettings .controls {
+    border: 1px solid #999;
+    width: calc(100% / 2 - 5px);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.alarmSettings .controls select{
+    outline: 0;
+    border: 0;
+    width: 100%;
+    font-size: 16px;
+}
+.container button{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    background-color: #4a98f7;
+    color: #fff;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
